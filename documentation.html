@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do Usuário - ZYO-OS</title>
+    <meta name="theme-color" content="#0f172a">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="logo">
+                <h1><i class="fab fa-linux"></i> ZYO-OS</h1>
+                <p>Guia do Usuário</p>
+            </div>
+        </header>
+        
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html" class="nav-item">
+                        <i class="fas fa-arrow-left"></i> <span>Voltar ao Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#intro" class="nav-item active">
+                        <i class="fas fa-book-open"></i> <span>Bem-vindo(a)!</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#linux-explained" class="nav-item">
+                        <i class="fas fa-lightbulb"></i> <span>O que é Linux?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#privacy" class="nav-item">
+                        <i class="fas fa-user-shield"></i> <span>Por que Privacidade?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#metaphors" class="nav-item">
+                        <i class="fas fa-puzzle-piece"></i> <span>Entendendo o Computador</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#filesystem" class="nav-item">
+                        <i class="fas fa-folder-tree"></i> <span>Onde estão meus arquivos?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#software" class="nav-item">
+                        <i class="fas fa-shopping-bag"></i> <span>Instalando Programas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#shortcuts" class="nav-item">
+                        <i class="fas fa-keyboard"></i> <span>Atalhos de Mestre</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#glossary" class="nav-item">
+                        <i class="fas fa-language"></i> <span>Dicionário "Technês"</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#daily-tips" class="nav-item">
+                        <i class="fas fa-star"></i> <span>Dicas de Ouro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#troubleshooting" class="nav-item">
+                        <i class="fas fa-life-ring"></i> <span>Resolução de Problemas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            
+            <!-- Intro -->
+            <section id="intro" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-hand-holding-heart"></i> Boas Vindas ao ZYO-OS</h1>
+                    <p class="section-subtitle">Um guia simples, humano e sem termos complicados, para você entender seu computador e seu novo sistema operacional.</p>
+                </header>
+                
+                <div class="section-content">
+                    <article class="info-card info">
+                        <header class="info-card-header">
+                            <i class="fas fa-smile"></i>
+                            <h3>Para quem é este guia?</h3>
+                        </header>
+                        <p>Se você está começando agora no mundo GNU/Linux ou entendendo melhor sistemas operacionais, ou acha que "Linux" é coisa de hacker, ou... se tem medo de apertar o botão errado e "quebrar" o computador, este guia é para você.</p>
+                        <br>
+                        <p>O <strong>ZYO-OS</strong> foi criado pensando em <strong>simplicidade</strong>, <strong>segurança</strong> e <strong>privacidade</strong>. Criado com a meta de ser <strong>simples</strong> para que o usuário saiba exatamente o que está utilizando como sistema operacional, então... não espere um SO "Gamer", nem muito "ultra moderno", cheio dos detalhes, ajustes e configurações. o ZYO-OS é um sistema operacional simples e que funciona! O nosso público é o de pessoas que buscam simplicidade e principalmente <strong>estabilidade!</strong>. 
+                        <br><br>
+                        <p>Então sendo essa a nossa filosofia, explicarei nesse guia como quase tudo funciona, usando exemplos do dia a dia e uma linguagem acessível e simples.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Linux Explained -->
+            <section id="linux-explained" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fab fa-linux"></i> O que é esse tal de Linux?</h1>
+                    <p class="section-subtitle">Esqueça os códigos e nomes complexos! Vamos falar de carros e casas.</p>
+                </header>
+
+                <div class="section-content">
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>A Metáfora da Casa Própria</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Imagine que os outros sistemas operacionais que não são do tipo "Linux", são como quartos de hotel. Eles são bonitos, confortáveis, estáveis, e com todo o suporte necessário, <strong>MAS</strong>: você não é dono de verdade. Você não pode derrubar uma parede, mudar a encanação ou saber se há câmeras escondidas nos espelhos. Você apenas paga para usar (com dinheiro ou com seus dados).</p>
+                            <p>O <strong>Linux</strong> (e o ZYO-OS) é como ter sua <strong>Casa Própria</strong>. Você recebe a chave, a escritura e a planta da casa. Se quiser pintar a parede de roxo, você pode. Se quiser construir um segundo andar, você pode. E o mais importante: você tem certeza de que ninguém está te espionando, porque você pode verificar cada tijolo (ou digamos que os vizinhos estão sempre de olho em possíveis rachaduras nessa "casa", as pessoas da comunidade sempre estão atentas a possíveis problemas, bugs ou coisas que podem "estragar" sua experiência, fazem isto de forma <strong>Voluntária!</strong> Lendo e verificando cada código presente nos repositórios oficiais).</p>
+                        </div>
+                    </article>
+
+                    <article class="info-card success">
+                        <header class="info-card-header">
+                            <i class="fas fa-check"></i>
+                            <h3>Por que é gratuito? (A Revolução do Código Aberto)</h3>
+                        </header>
+                        <p>Muitas pessoas estranham: "Se é tão bom, por que é de graça? Onde está a pegadinha?". A resposta está na história da computação e em uma filosofia chamada <strong>Software Livre</strong>.</p>
+                        
+                        <h4 style="margin-top: 15px; margin-bottom: 10px; color: var(--text-dark); font-weight: 600;">1. A Filosofia GNU e a Liberdade</h4>
+                        <p>Na década de 80, Richard Stallman iniciou o <strong>Projeto GNU</strong>. Ele acreditava que o software deveria ser livre. Não necessariamente "grátis" (você pode cobrar por suporte ou os usuários podem fazer doações aos projetos de código aberto), mas livre no sentido de <strong>liberdade</strong>.</p>
+                        <p>Naquela época, as empresas começaram a fechar o código dos programas, impedindo que os usuários consertassem erros ou adaptassem o software. Stallman viu isso como um problema ético: o usuário se tornava refém da empresa. O Projeto GNU nasceu para criar um sistema operacional completo onde o usuário tivesse total soberania.</p>
+                        <p>Para proteger essa ideia, ele criou a licença <strong>GPL (General Public License)</strong>. Ela funciona como uma "Constituição do Software": garante que qualquer pessoa tenha o direito de ver o código-fonte (a receita), modificar, melhorar e redistribuir. A regra de ouro é: se você melhorar o código e distribuir, deve manter a mesma liberdade para os próximos usuários.</p>
+
+                        <h4 style="margin-top: 15px; margin-bottom: 10px; color: var(--text-dark); font-weight: 600;">2. O Fator Linus Torvalds</h4>
+                        <p>Em 1991, um estudante finlandês chamado <strong>Linus Torvalds</strong> criou um pequeno núcleo de sistema (Kernel) como um hobby. Ele queria algo potente como o UNIX, mas que rodasse em seu computador pessoal.</p>
+                        <p>O projeto GNU já tinha quase todas as peças de um sistema (editor de texto, compilador, shell), mas faltava a peça central: o Kernel (o coração). Linus Torvalds, sem saber, preencheu essa lacuna. A união das ferramentas do GNU com o Kernel do Linux criou o sistema operacional que usamos hoje, tecnicamente chamado de <strong>GNU/Linux</strong>.</p>
+                        <p>Linus tomou uma decisão histórica ao lançar seu código sob a licença GPL. Ele percebeu que, ao abrir o código, milhares de programadores ao redor do mundo poderiam corrigir erros e adicionar melhorias muito mais rápido do que ele faria sozinho. O Linux se tornou um patrimônio comum da humanidade, mantido por uma comunidade global e até por empresas concorrentes que colaboram na mesma base.</p>
+
+                        <h4 style="margin-top: 15px; margin-bottom: 10px; color: var(--text-dark); font-weight: 600;">3. A Diferença entre "Preço" e "Liberdade"</h4>
+                        <p>Em inglês, a palavra "Free" causa confusão pois significa tanto "Grátis" quanto "Livre". Para entender o Linux, precisamos separar esses conceitos:</p>
+                        <ul style="margin-bottom: 15px;">
+                            <li><strong>Gratuito (Preço Zero):</strong> Assim como um brinde que você ganha. Você não paga, mas não tem controle sobre como foi feito.</li>
+                            <li><strong>Livre (Liberdade de Expressão):</strong> Assim como a liberdade de falar ou de ir e vir. Você tem o direito de estudar como o sistema funciona, modificá-lo para suas necessidades e compartilhar com seus amigos.</li>
+                        </ul>
+                        <p><strong>A Metáfora do Carro:</strong> Imagine ganhar um carro. Se ele for apenas "grátis", você pode dirigir, mas o capô vem soldado. Se quebrar, você é obrigado a levar na concessionária autorizada. Mas se ele for "livre" (como o Linux), você recebe o carro, as chaves, o manual completo de engenharia e a permissão para abrir o capô, trocar o motor, pintar de outra cor e até construir um carro novo partindo deste "carro" inicial.</p>
+                        <p>O ZYO-OS é ambos. Você não paga nada para baixar (Gratuito) e tem total controle sobre o que roda na sua máquina (Livre).</p>
+                        
+                        <h4 style="margin-top: 15px; margin-bottom: 10px; color: var(--text-dark); font-weight: 600;">Por que o ZYO-OS modifica o Debian?</h4>
+                        <p>O Debian é um dos sistemas mais estáveis e seguros do mundo (usado até na Estação Espacial Internacional!). Porém, ele vem "cru" e pode ser técnico demais para configurar.</p>
+                        <p><strong>A missão do ZYO-OS:</strong> Nós pegamos essa base indestrutível do Debian e construímos uma "casa" confortável em cima dela. Ajustamos as configurações, instalamos proteções de privacidade e simplificamos a interface para que crianças e idosos possam usar o poder do Linux sem precisar entender de engenharia.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>Mitos vs. Realidade</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <ul class="feature-list">
+                                <li>❌ <strong>Mito:</strong> "Linux é difícil e é só para programadores."</li>
+                                <li>✅ <strong>Realidade:</strong> Se você sabe usar um celular Android (que é Linux!), ou um computador, ou se quer aprender a usar, você sabe usar o ZYO-OS. A maioria das coisas é feita com simples cliques.</li>
+                                <li>❌ <strong>Mito:</strong> "Não tem jogos nem pacote Office."</li>
+                                <li>✅ <strong>Realidade:</strong> A Steam roda milhares de jogos no Linux (As vezes até com performance superior). O LibreOffice abre e salva arquivos do Word e Excel perfeitamente, para edições de imagem pode usar o GIMP, etc.</li>
+                                <li>❌ <strong>Mito:</strong> "Preciso usar o terminal para tudo... (aquela tela preta, letras verdes, com uns nomes aleatórios, códigos e comandos)"</li>
+                                <li>✅ <strong>Realidade:</strong> Hoje em dia, instalar programas, atualizar o sistema e configurar impressoras pode ser feito 100% visualmente, como baixar aplicativos da play store ou app store. O terminal é poderoso, auxilia bastante quem quer ir direto ao ponto, mas extremamente opcional.</li>
+                                <li>❌ <strong>Mito:</strong> "Meus arquivos do Windows não vão abrir."</li>
+                                <li>✅ <strong>Realidade:</strong> Linux lê nativamente arquivos de música, vídeo, PDF e imagens. Discos externos e Pen Drives formatados no Windows funcionam na hora.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="info-card info">
+                        <header class="info-card-header">
+                            <i class="fas fa-shield-virus"></i>
+                            <h3>E os vírus? Preciso de Antivírus?</h3>
+                        </header>
+                        <p>Eo outros sistemas operacionais, vírus são como gripes: fáceis de pegar. No Linux, a estrutura é diferente. Para um vírus funcionar, ele precisaria da sua senha de administrador ("Sudo") e da sua permissão explícita. Por isso, <strong>antivírus pesados são desnecessários</strong> no ZYO-OS. O melhor antivírus aqui é o bom senso: não digite sua senha para instalar ou rodar programas estranhos.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Privacy -->
+            <section id="privacy" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-user-secret"></i> Por que <strong>Privacidade Importa?</strong></h1>
+                    <p class="section-subtitle">"Eu não tenho nada a esconder" — Será mesmo?</p>
+                </header>
+
+                <div class="section-content">
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>A Casa de Vidro</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Imagine viver em uma casa onde todas as paredes são de vidro transparente. Qualquer pessoa na rua pode ver o que você come, que horas vai dormir, o que assiste na TV e com quem conversa.</p>
+                            <p>Isso é o que acontece na maioria dos sistemas modernos. Eles coletam "telemetria" (dados de uso). Eles sabem onde você clica, o que você pesquisa, sabem seus interesses e onde você está.</p>
+                            <p><strong>O ZYO-OS troca as paredes de vidro para paredes de tijolos e coloca cortinas nessa casa.</strong> Nós acreditamos que o que você faz no seu computador diz respeito apenas a você. Sem rastreadores, sem envio de dados para empresas, sem "espiões" digitais, sem vender seus gostos pessoais para empresas lhe ofertarem coisas (anúncios).</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Metaphors -->
+            <section id="metaphors" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-puzzle-piece"></i> Entendendo as Peças</h1>
+                    <p class="section-subtitle">Traduzindo os componentes do computador para o mundo real.</p>
+                </header>
+
+                <div class="section-content">
+                    <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-microchip"></i></div>
+                            <h3>Hardware = O Terreno</h3>
+                            <p>É a parte física. O processador, a memória, o disco, ou seja: o computador, o monitor, a impressora e etc. É onde a casa é construída.</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-watch"></i></div>
+                            <h3>Software = O que você utiliza</h3>
+                            <p>É a parte digital da coisa. Os programas que você instala, os aplicativos que rodam. É o que você vê e usa, como a calculadora ou o navegador por exemplo.</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                            <h3>Kernel = A Fundação</h3>
+                            <p>É a base de concreto e as vigas. Você não vê, mas é o que segura a casa em pé. O Kernel Linux conversa com o hardware para que tudo funcione.</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-desktop"></i></div>
+                            <h3>Interface = A Decoração</h3>
+                            <p>É o que você vê. As janelas, os ícones, o papel de parede. No Linux, você pode trocar toda a decoração (usar GNOME ou XFCE) sem ter que derrubar a casa.</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-shopping-basket"></i></div>
+                            <h3>Repositório = O Supermercado</h3>
+                            <p>Em outros sistemas operacionais, você baixa programas de qualquer site (perigoso). No Linux, temos o "Repositório": um supermercado oficial onde todos os produtos (apps) podem ser obtidos, de forma grátis, que foram testados e são seguros.</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-memory"></i></div>
+                            <h3>Memória RAM = A Mesa de Trabalho</h3>
+                            <p>É onde você coloca as coisas que está usando <em>agora</em>. Se a mesa é pequena (pouca RAM), você precisa guardar coisas no armário para abrir outras, o que deixa tudo lento. Ao desligar o PC (computador), a mesa é limpa.</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-hdd"></i></div>
+                            <h3>HD/SSD = O Armário de Arquivos</h3>
+                            <p>É onde seus arquivos ficam guardados para sempre (fotos, documentos). Mesmo desligando a luz (energia), eles continuam lá, seguros dentro das gavetas.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filesystem -->
+            <section id="filesystem" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-folder-tree"></i> Onde estão meus arquivos?</h1>
+                    <p class="section-subtitle">Em outros sistemas operacionais, por exemplo, temos C:, D:, E:... No Linux, temos uma Árvore.</p>
+                </header>
+
+                <div class="section-content">
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>A Raiz (/) de Tudo</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Imagine o Linux como um prédio gigante. A entrada principal é a <strong>Raiz</strong> (representada por uma barra <code>/</code>). Tudo está dentro desse prédio.</p>
+                            <ul class="feature-list">
+                                <li><code>:/</code> <strong>(Raiz):</strong> O saguão do prédio. Só o síndico (Root) manda aqui.</li>
+                                <li><code>/home</code> <strong>(Apartamentos):</strong> É onde moram os usuários. Dentro de <code>/home/voce</code> estão seus Documentos, Fotos e Downloads. É o único lugar onde você pode bagunçar à vontade.</li>
+                                <li><code>/bin</code> <strong>(Ferramentas):</strong> Onde ficam os programas essenciais (como o martelo e a chave de fenda do sistema).</li>
+                                <li><code>/etc</code> <strong>(Administração):</strong> Onde ficam as regras do condomínio (arquivos de configuração).</li>
+                                <li><code>/tmp</code> <strong>(Lixeira Temporária):</strong> Uma área de rascunho. Tudo que é colocado aqui é apagado automaticamente quando você reinicia o PC.</li>
+                                <li><code>/usr</code> <strong>(Programas):</strong> É onde a maioria dos aplicativos "mora". É como a pasta "Arquivos de Programas x86".</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="info-card tip">
+                        <header class="info-card-header">
+                            <i class="fas fa-usb"></i>
+                            <h3>E o meu Pen Drive? (C: D:)</h3>
+                        </header>
+                        <p>No Linux, não existem letras de unidade. Quando você coloca um Pen Drive no computador, ele é "montado" (conectado) dentro de uma pasta, geralmente em <code>/media/nome_do_usuario/PenDrive</code>. É como se uma nova sala aparecesse magicamente no seu apartamento.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Software -->
+            <section id="software" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-shopping-bag"></i> Instalando Programas</h1>
+                    <p class="section-subtitle">Esqueça o "baixar instalador do site". Aqui é mais seguro.</p>
+                </header>
+
+                <div class="section-content">
+                    <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-store"></i></div>
+                            <h3>A Loja (App Store)</h3>
+                            <p>Assim como no seu celular, o ZYO-OS tem uma loja de aplicativos. É o jeito mais fácil e seguro. Você abre, pesquisa "Spotify" ou "VLC", clica em instalar e pronto. Sem "Avançar, Avançar, Aceito, Instalar barra de ferramentas".</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-box"></i></div>
+                            <h3>Arquivos: .tar.gz (tarball), .deb ou .appimage</h3>
+                            <p>No Linux, também é possível baixar um instalador de programas, porém são vários tipos, como os arquivos .tag.gz que requerem certo conhecimento para compilar o programa(nada de outro mundo, mas requer usar o terminal), Mas não se assuste: você também você pode baixar os pacotes .deb para instalar (do tipo só clicar no botão next, ou próximo até instalar), ou usar os .appimage que rodam diretamente sem precisar instalar nada no seu computador.</p>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-terminal"></i></div>
+                            <h3>O Terminal (APT)</h3>
+                            <p>É o jeito "express". Em vez de abrir a loja, pesquisar e clicar, você dá uma ordem direta ao estoquista:</p>
+                            <div class="code-inline"><code>sudo apt install vlc</code></div>
+                            <p>O sistema vai no depósito oficial, pega o pacote seguro e instala para você em segundos.</p>
+                        </article>
+                    </div>
+                    
+                    <article class="info-card warning">
+                        <header class="info-card-header">
+                            <i class="fas fa-ban"></i>
+                            <h3>Arquivos .EXE funcionam?</h3>
+                        </header>
+                        <p>Nativamente, não. O Linux usa pacotes <code>.deb</code> (como se fossem os .exe do Debian). Existem formas de rodar programas de Windows (usando Wine), mas sempre prefira a versão feita para Linux. É mais rápida e estável.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Shortcuts -->
+            <section id="shortcuts" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-keyboard"></i> Atalhos de Mestre</h1>
+                    <p class="section-subtitle">Pequenos truques que fazem você parecer um hacker de filmes.</p>
+                </header>
+
+                <div class="section-content">
+                    <div class="faq-grid">
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Super</div>
+                            <div>
+                                <strong>A Tecla "Windows"</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Abre o menu de aplicativos ou a visão geral das atividades.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Alt + Tab</div>
+                            <div>
+                                <strong>Alternar Janelas</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Muda rapidamente entre os programas abertos.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Ctrl + Alt + T</div>
+                            <div>
+                                <strong>Abrir Terminal</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">O atalho universal para chamar a tela preta.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">PrtSc</div>
+                            <div>
+                                <strong>Print Screen</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Tira uma foto da tela. No GNOME, abre uma ferramenta de captura avançada.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Super + L</div>
+                            <div>
+                                <strong>Bloquear Tela</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Vai sair para o café? Bloqueie o PC instantaneamente (Lock).</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Alt + F4</div>
+                            <div>
+                                <strong>Fechar Janela</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">O clássico atalho para fechar o programa atual.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Ctrl + F</div>
+                            <div>
+                                <strong>Localizar</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Funciona em quase tudo: navegador, editor de texto, gerenciador de arquivos.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Super + D</div>
+                            <div>
+                                <strong>Mostrar Área de Trabalho</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Minimiza todas as janelas para você ver o desktop limpo. Aperte de novo para voltar.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Super + Setas</div>
+                            <div>
+                                <strong>Organizar Janelas</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Seta para Esquerda/Direita divide a tela ao meio. Seta para Cima maximiza.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Ctrl + Shift + T</div>
+                            <div>
+                                <strong>Reabrir Aba Fechada</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Fechou sem querer? Isso salva vidas no navegador e no terminal.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Ctrl + H</div>
+                            <div>
+                                <strong>Ver Arquivos Ocultos</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">No gerenciador de arquivos, revela pastas que começam com "." (ponto).</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Alt + F2</div>
+                            <div>
+                                <strong>Executar Comando</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Abre uma caixa rápida para digitar o nome de um programa e abrir sem mouse.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Ctrl + L</div>
+                            <div>
+                                <strong>Limpar Terminal</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Deixa a tela do terminal limpa, jogando o histórico para cima.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Ctrl + W</div>
+                            <div>
+                                <strong>Fechar Aba</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Fecha apenas a aba atual (navegador ou terminal), não a janela inteira.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #e2e8f0; padding: 10px 15px; border-radius: 8px; font-weight: bold; border-bottom: 4px solid #cbd5e1;">Ctrl + C</div>
+                            <div>
+                                <strong>Cancelar Comando</strong>
+                                <p style="margin:0; font-size: 14px; color: var(--text-muted);">Cancela um comando que está rodando no terminal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Glossary -->
+            <section id="glossary" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-language"></i> Dicionário "Technês"</h1>
+                    <p class="section-subtitle">Pequeno glossário para você não ficar perdido.</p>
+                </header>
+
+                <div class="section-content">
+                    <div class="faq-grid">
+                        <details class="faq-item">
+                            <summary>O que é uma "Distro"?</summary>
+                            <p>Abreviação de "Distribuição". O Linux é o motor (Kernel). Uma Distro é o carro completo (Motor + Bancos + Volante + Pintura). O ZYO-OS é uma Distro, assim como Ubuntu ou Fedora.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Terminal"?</summary>
+                            <p>É aquela tela preta com letras. Pense nele como enviar uma mensagem de texto direta para o computador, em vez de clicar em botões. É poderoso, mas no ZYO-OS você raramente precisará usá-lo.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Sudo"?</summary>
+                            <p>Significa "SuperUser DO" (Super Usuário Faça). É como a chave mestra do gerente. Quando o computador pede sua senha para instalar algo, ele está pedindo permissão de "Sudo" para garantir que é você mesmo.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Open Source"?</summary>
+                            <p>Código Aberto. Significa que a receita do bolo é pública. Isso garante segurança (muitos olhos vendo se não tem veneno) e evolução rápida.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é um "Bug"?</summary>
+                            <p>Em inglês significa "inseto". Na computação, é um erro ou falha no código de um programa. Não é um vírus! É apenas algo que não funcionou como deveria (como uma lâmpada que pisca).</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Driver"?</summary>
+                            <p>É um "tradutor". O sistema operacional fala uma língua, e sua impressora fala outra. O Driver traduz os pedidos do sistema para que a impressora entenda e imprima.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Root"?</summary>
+                            <p>É o "Super Usuário" ou Administrador Supremo. É a conta que tem poder total sobre o sistema (pode apagar tudo). No ZYO-OS, usamos o comando <code>sudo</code> para pegar esses poderes emprestados apenas quando necessário.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "GUI"?</summary>
+                            <p>Sigla para "Interface Gráfica do Usuário". É tudo aquilo que é visual: janelas, botões, ícones e mouse. O oposto da "Linha de Comando" (tela preta com letras).</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Live USB"?</summary>
+                            <p>É uma forma mágica de testar o sistema sem instalar nada. O sistema roda direto do Pen Drive, sem mexer no seu HD. Se você tirar o Pen Drive e reiniciar, seu computador volta a ser exatamente como era antes.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Bootloader" (GRUB)?</summary>
+                            <p>É o "Porteiro" do seu computador. Quando você liga a máquina, ele é o primeiro a acordar e pergunta: "Em qual sistema você quer entrar hoje?".</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Dependência"?</summary>
+                            <p>Imagine que você quer fazer um bolo (instalar um programa). A receita pede farinha e ovos. No Linux, o sistema é inteligente: se você pedir para instalar o "Bolo", ele baixa e instala a "Farinha" e os "Ovos" automaticamente para você.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Partição"?</summary>
+                            <p>É como dividir uma gaveta grande em vários compartimentos menores. O HD é a gaveta, e as partições são as divisórias para organizar as coisas (Sistema, Arquivos, Swap).</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Swap"?</summary>
+                            <p>É uma "Memória de Emergência". Quando a memória RAM (mesa) fica cheia, o computador usa um pedacinho do HD (armário) para guardar coisas temporariamente e não travar.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "LTS"?</summary>
+                            <p>Sigla para "Long Term Support" (Suporte de Longo Prazo). São versões do sistema feitas para durar anos sem precisar formatar. O ZYO-OS é baseado no Debian Stable, que é ultra LTS.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Daemon"?</summary>
+                            <p>Pronuncia-se "Dêmon". São programas "invisíveis" que trabalham nos bastidores. Enquanto você navega na internet, há um daemon cuidando do Wi-Fi, outro do som e outro da impressão.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Montar" (Mount)?</summary>
+                            <p>No Linux, não existem letras (C:, D:). Quando você espeta um Pen Drive, ele precisa ser "Montado" (encaixado) em uma pasta para ser acessado. Geralmente o sistema faz isso sozinho.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Shell" (Bash)?</summary>
+                            <p>É o "tradutor" do terminal. Você digita comandos em inglês, e o Shell traduz para linguagem de máquina. O Bash é o Shell padrão da maioria dos Linux.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Kernel Panic"?</summary>
+                            <p>É o equivalente à "Tela Azul" do Windows. Acontece quando o sistema encontra um erro tão grave que precisa parar tudo imediatamente para não estragar nada. É raro!</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>O que é "Log"?</summary>
+                            <p>É o "Diário de Bordo" do sistema. Tudo o que acontece (erros, conexões, instalações) é anotado em arquivos de texto. Se algo der errado, a resposta geralmente está nos logs.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Daily Tips -->
+            <section id="daily-tips" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-star"></i> Dicas de Ouro para o Dia a Dia</h1>
+                    <p class="section-subtitle">Pequenos hábitos que mantêm seu PC saudável e rápido.</p>
+                </header>
+
+                <div class="section-content">
+                    <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                        <article class="info-card tip">
+                            <header class="info-card-header">
+                                <i class="fas fa-sync-alt"></i>
+                                <h3>Atualize Sempre</h3>
+                            </header>
+                            <p>Atualizações no Linux não servem apenas para mudar o visual, elas fecham buracos de segurança. É como vacina: mantenha em dia.</p>
+                        </article>
+
+                        <article class="info-card warning">
+                            <header class="info-card-header">
+                                <i class="fas fa-download"></i>
+                                <h3>Instale da Loja</h3>
+                            </header>
+                            <p>Evite baixar programas de sites aleatórios na internet (como se fazia no Windows). Use a "Loja de Aplicativos" ou o terminal. É garantia de que o software é original e sem vírus.</p>
+                        </article>
+
+                        <article class="info-card info">
+                            <header class="info-card-header">
+                                <i class="fas fa-power-off"></i>
+                                <h3>Desligue Corretamente</h3>
+                            </header>
+                            <p>Nunca desligue puxando da tomada! O sistema precisa "arrumar a casa" antes de sair. Puxar da tomada pode corromper seus arquivos (bagunçar o armário).</p>
+                        </article>
+
+                        <article class="info-card dark">
+                            <header class="info-card-header">
+                                <i class="fas fa-history"></i>
+                                <h3>Tenha uma Máquina do Tempo</h3>
+                            </header>
+                            <p>Use programas como o <strong>Timeshift</strong>. Ele tira uma "foto" do seu sistema. Se uma atualização quebrar algo, você pode "voltar no tempo" para quando tudo funcionava, em segundos.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Troubleshooting -->
+            <section id="troubleshooting" class="content-section">
+                <header class="section-header">
+                    <h1><i class="fas fa-life-ring"></i> Resolução de Problemas</h1>
+                    <p class="section-subtitle">Algo deu errado? Calma, vamos resolver.</p>
+                </header>
+
+                <div class="section-content">
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>O computador travou? (Guia de Sobrevivência)</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Diferente de outros sistemas, no Linux raramente o sistema todo trava. Geralmente é apenas um programa específico que parou de responder, enquanto o resto continua funcionando.</p>
+                            
+                            <h4 class="mt-3" style="color: var(--text-dark); margin-bottom: 15px;">Nível 1: O Mouse ainda mexe?</h4>
+                            <p class="mb-3">Se o mouse mexe, o sistema está vivo! Você tem duas opções para fechar o programa travado:</p>
+
+                            <!-- Opção 1 -->
+                            <div class="info-card info mb-3">
+                                <header class="info-card-header">
+                                    <i class="fas fa-window-close"></i>
+                                    <h4>Opção 1: Método Visual</h4>
+                                </header>
+                                <p>Ideal para iniciantes. Funciona como o "Gerenciador de Tarefas".</p>
+                                <ol class="feature-list" style="margin-top: 10px;">
+                                    <li>Abra o menu e procure por <strong>"Monitor do Sistema"</strong>.</li>
+                                    <li>Encontre o programa travado na lista.</li>
+                                    <li>Clique com botão direito e escolha <strong>"Matar"</strong> (Kill).</li>
+                                </ol>
+                            </div>
+
+                            <!-- Opção 2 -->
+                            <div class="info-card warning">
+                                <header class="info-card-header">
+                                    <i class="fas fa-skull-crossbones"></i>
+                                    <h4>Opção 2: O "Matador" Xkill (Avançado)</h4>
+                                </header>
+                                <p>Transforma seu mouse em uma arma para fechar janelas instantaneamente.</p>
+                                
+                                <div class="code-block" style="margin: 15px 0;">
+                                    <header class="code-block-header" style="padding: 5px 15px; min-height: 40px;">
+                                        <span class="code-block-title">Terminal (Ctrl+Alt+T)</span>
+                                    </header>
+                                    <pre style="padding: 15px;"><code>xkill</code></pre>
+                                </div>
+
+                                <ul class="checklist" style="margin-top: 0;">
+                                    <li><i class="fas fa-mouse-pointer"></i> O cursor virará um <strong>X</strong> ou <strong>Caveira</strong>.</li>
+                                    <li><i class="fas fa-bullseye"></i> Clique na janela travada para "matá-la".</li>
+                                    <li><i class="fas fa-undo"></i> <strong>Para cancelar:</strong> Clique com o botão direito do mouse.</li>
+                                </ul>
+
+                                <div class="info-note" style="background: #fff0f0; color: var(--danger); border: 1px solid var(--danger-light);">
+                                    <i class="fas fa-exclamation-triangle" style="color: var(--danger);"></i>
+                                    <strong>Cuidado:</strong> Não clique na área de trabalho ou na barra de tarefas, ou você fechará a interface do sistema!
+                                </div>
+                            </div>
+
+                            <h4 class="mt-3" style="color: var(--text-dark); margin-bottom: 10px;">Nível 2: O Mouse congelou? (O segredo do TTY)</h4>
+                            <p>Se nem o mouse mexe, a interface gráfica travou. Mas o "cérebro" do Linux (o Kernel) provavelmente ainda está funcionando. Vamos acessar o modo texto de emergência, chamado <strong>TTY</strong>.</p>
+                            
+                            <div class="info-card info">
+                                <header class="info-card-header">
+                                    <i class="fas fa-terminal"></i>
+                                    <h4>O que é TTY e Interface Gráfica?</h4>
+                                </header>
+                                <p>O Linux roda várias "telas" virtuais ao mesmo tempo. A <strong>Interface Gráfica</strong> (onde você vê janelas, mouse, ícones) geralmente fica na tela 1, 2 ou 7. As outras telas (3, 4, 5, 6) são <strong>Terminais TTY</strong> (Teletype), que são telas de texto puro, independentes do gráfico. Se o gráfico quebrar, o TTY continua funcionando.</p>
+                            </div>
+
+                            <p><strong>Como destravar pelo TTY:</strong></p>
+                            <ol class="feature-list" style="list-style: decimal;">
+                                <li>Aperte <strong>Ctrl + Alt + F3</strong> (ou F4, F5). Sua tela vai piscar e ficar preta (ou mostrar apenas texto). Não se assuste!</li>
+                                <li>O sistema pedirá seu login. Digite seu <strong>usuário</strong> e aperte Enter.</li>
+                                <li>Digite sua <strong>senha</strong> (ela não aparece enquanto digita) e aperte Enter.</li>
+                                <li>Agora você está no comando! Digite <code>htop</code> e aperte Enter, caso nao abrir, digite: sudo apt install htop</li>
+                                <li>O <strong>htop</strong> mostra tudo que está rodando. Use as setas do teclado para encontrar o programa que está consumindo 100% de CPU ou Memória (geralmente fica no topo da lista).</li>
+                                <li>Com o programa selecionado, aperte <strong>F9</strong> (Kill) e depois Enter para confirmar o fechamento do programa.</li>
+                                <li>Para voltar à sua Interface Gráfica normal, aperte <strong>Ctrl + Alt + F2</strong> (ou F1, ou F7, tente um por um até sua tela normal voltar).</li>
+                            </ol>
+                            
+                            <div class="info-card warning">
+                                <header class="info-card-header">
+                                    <i class="fas fa-power-off"></i>
+                                    <h4>Último Recurso</h4>
+                                </header>
+                                <p>Se nem o TTY abrir (o teclado não responde a nada), então o Kernel travou (Kernel Panic). Nesse caso, segure o botão físico de ligar do computador por 5 segundos até desligar.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>Sem som?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Verifique se o volume não está "Mudo" no ícone de alto-falante perto do relógio. Clique nele e verifique se a "Saída" correta está selecionada (ex: Fones de Ouvido vs Alto-falantes).</p>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>A senha não aparece quando digito?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Isso é uma medida de segurança do Linux! Quando o terminal pede sua senha, <strong>nada vai aparecer na tela</strong> (nem bolinhas, nem asteriscos). Isso impede que alguém veja quantos caracteres tem sua senha. Continue digitando normalmente e aperte ENTER. Confie, ele está lendo.</p>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>Wi-Fi não conecta ou sumiu</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Verifique se não há um botão físico no seu notebook que desliga o Wi-Fi (modo avião). No Linux, às vezes atualizações de Kernel podem afetar drivers de Wi-Fi muito novos. Reiniciar o computador geralmente resolve.</p>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>A impressora não funciona?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>A maioria das impressoras modernas (HP, Epson, Brother) funciona automaticamente ao plugar o USB. Se não funcionar, vá em <strong>Configurações > Impressoras</strong> e clique em "Adicionar". O Linux já possui milhares de drivers ("tradutores") embutidos.</p>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>Erro na atualização ou "Pacotes Quebrados"?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Se você desligou o PC durante uma atualização ou a internet caiu, o gerenciador de pacotes pode travar. O terminal vai reclamar de "dpkg was interrupted".</p>
+                            <p><strong>A Solução Mágica:</strong> Abra o terminal e digite:</p>
+                            <div class="code-inline"><code>sudo dpkg --configure -a</code></div>
+                            <p>Se não resolver, tente o "consertador universal":</p>
+                            <div class="code-inline"><code>sudo apt --fix-broken install</code></div>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>A hora está errada (Dual Boot com Windows)?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Se você usa Windows e Linux no mesmo PC, a hora pode ficar mudando sozinha. Isso acontece porque o Linux usa o horário universal (UTC) na placa-mãe, e o Windows usa o horário local.</p>
+                            <p>Para corrigir, force o Linux a usar o horário local como o Windows:</p>
+                            <div class="code-inline"><code>timedatectl set-local-rtc 1</code></div>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>Baixei um programa (.AppImage) e não abre?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Arquivos <code>.AppImage</code> são como programas portáteis (não precisam instalar). Mas, por segurança, o Linux não deixa executar nada que você baixa da internet automaticamente.</p>
+                            <p><strong>Como resolver:</strong> Clique com o botão direito no arquivo > Propriedades > Permissões > Marque a caixa <strong>"Permitir execução do arquivo como um programa"</strong>. Agora dê dois cliques!</p>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>O Pendrive não aparece?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Às vezes, ao plugar um disco externo, ele não abre a janela automaticamente. Abra o programa <strong>"Discos"</strong> (ou Gnome Disks). Ele mostra tudo que está conectado. Se o pendrive aparecer lá, clique no botão "Play" (triângulo) para montá-lo manualmente.</p>
+                        </div>
+                    </article>
+
+                    <article class="step-card">
+                        <header class="step-card-header">
+                            <div class="step-title">
+                                <h3>O sistema está lento?</h3>
+                            </div>
+                        </header>
+                        <div class="step-card-content">
+                            <p>Algo está comendo sua memória ou processador. Abra o aplicativo <strong>"Monitor do Sistema"</strong> (igual ao Gerenciador de Tarefas). Clique na coluna "CPU" ou "Memória" para ver quem é o culpado. Muitas vezes é apenas uma aba do navegador travada.</p>
+                        </div>
+                    </article>
+
+                    <article class="info-card tip">
+                        <header class="info-card-header">
+                            <i class="fas fa-comment-dots"></i>
+                            <h3>Ainda precisa de ajuda?</h3>
+                        </header>
+                        <p>A comunidade Linux é enorme e amigável. Pesquisar no Google "Como fazer X no Debian" geralmente traz a resposta exata que você precisa, pois o ZYO-OS é baseado no Debian.</p>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

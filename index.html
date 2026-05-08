@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYO-OS - Segurança, Privacidade e Simplicidade</title>
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="landing-page">
+
+    <!-- Navegação -->
+    <nav class="landing-nav">
+        <div class="nav-container">
+            <div class="landing-logo">
+                <i class="fab fa-linux"></i>
+                <span>ZYO-OS</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Recursos</a>
+                <a href="#about">Sobre</a>
+                <a href="https://sourceforge.net" target="_blank">Download ISO</a>
+                <a href="documentation.html" class="btn btn-primary btn-sm nav-cta">
+                    <i class="fas fa-book"></i> Documentação
+                </a>
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-blob" style="top: -100px; right: -100px;"></div>
+        <div class="hero-blob" style="bottom: -100px; left: -100px; background: radial-gradient(circle, rgba(42, 200, 141, 0.1) 0%, rgba(255, 255, 255, 0) 70%); animation-delay: -5s;"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon"><i class="fas fa-shield-alt"></i></span>
+                <span class="badge-text">Baseado no Debian 12 Bookworm</span>
+            </div>
+            <h1>O Sistema Operacional <br><span class="text-gradient">Seguro e Humano</span></h1>
+            <p class="hero-subtitle">
+                ZYO-OS é uma distribuição Linux focada em privacidade, segurança e simplicidade. 
+                Projetado para crianças, idosos e quem busca uma vida digital livre de rastreamento e IA invasiva.
+            </p>
+            <div class="hero-actions">
+                <a href="zyo-from-scratch.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-hammer"></i> Construa o Seu (Tutorial)
+                </a>
+                <a href="#download" class="btn btn-outline btn-lg">
+                    <i class="fas fa-download"></i> Baixar Versão Pronta
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Open Source</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">0%</span>
+                    <span class="stat-label">Telemetria</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">LTS</span>
+                    <span class="stat-label">Suporte Longo</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">user@zyo-os:~</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="code-line"><span class="prompt">$</span> neofetch</div>
+                    <div class="code-output">
+                        <pre>
+                 /`\  ___  /`\            user@zyo-os
+                 \d `"\:/"` b/            -----------
+                /`.--. ` .--.`\           OS: ZYO-OS Linux x86_64
+                |/ __ \ / __ \|           Host: KVM/QEMU
+                ( ((o) V (o)) )           Kernel: 6.1.0-18-amd64
+                |\`""`/^\`""`/|           Uptime: 42 mins
+                \ `--'\ /'--` /           Packages: 1420 (dpkg)
+                /`-._  `  _.-`\           Shell: bash 5.2.15
+               / /.:.:.:.:.:.\ \          Resolution: 1920x1080
+              ; |.:.:.:.:.:.:.| ;         DE: GNOME 43.9
+              | |:.:.:.:.:.:.:| |         WM: Mutter
+              | |.:.:.:.:.:.:.| |         Theme: Adwaita [GTK2/3]
+              | |:.:.:.:.:.:.:| |         Icons: Papirus [GTK2/3]
+              \/\.:.:.:.:.:.:./\/         Terminal: gnome-terminal
+                _`).-.-:-.-.(`_           CPU: AMD Ryzen 7 (4) @ 3.8GHz
+            ,=^` |=  =| |=  =| `^=,       GPU: VMware SVGA II Adapter
+           /jgs  \=/\=/ \=/\=/     \      Memory: 1450MiB / 3934MiB
+                  `  `   `  `
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Grid -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <div class="section-header-center">
+                <h2>Por que escolher o <span class="text-primary">ZYO-OS</span>?</h2>
+                <p>Construído sobre ombros de gigantes, refinado para o usuário final.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3>Privacidade Total</h3>
+                    <p>Sem telemetria, sem coleta de dados e sem IA acoplada ao sistema. Seus dados permanecem no seu computador.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-child"></i></div>
+                    <h3>Simplicidade</h3>
+                    <p>Interface pensada para quem não tem afinidade com tecnologia. Ideal para crianças e idosos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Base Debian Sólida</h3>
+                    <p>Estabilidade inabalável do Debian Bookworm. Milhares de pacotes disponíveis e segurança de nível empresarial.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Faça Você Mesmo</h3>
+                    <p>Não apenas um sistema, mas uma escola. Nossa documentação ensina você a construir o sistema do zero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section (Como Funciona) -->
+    <section id="process" class="process-section">
+        <div class="section-container">
+            <div class="section-header-center">
+                <h2>Como Funciona a <span class="text-primary">Criação</span>?</h2>
+                <p>O ZYO-OS não é apenas um sistema, é um método. Veja como você construirá seu OS.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Sistema Base</h3>
+                    <p>Começamos com o <code>debootstrap</code> para criar um núcleo Debian puro e mínimo, sem bloatware.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Interface</h3>
+                    <p>Instalamos o ambiente gráfico (GNOME ou XFCE) e configuramos drivers de vídeo e áudio.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Personalização</h3>
+                    <p>Aplicamos temas, ícones, papéis de parede e configurações de segurança (Firewall/DNS).</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Geração da ISO</h3>
+                    <p>Compactamos tudo em um arquivo <code>.iso</code> bootável pronto para instalar em qualquer PC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Sobre o Projeto <span class="text-primary">ZYO</span></h2>
+                    <p>O ZYO-OS nasceu da necessidade de simplificar o Linux para usuários não técnicos, mantendo a robustez do Debian.</p>
+                    <p>Nossa filosofia é baseada em três pilares:</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> <strong>Transparência:</strong> Código 100% aberto e auditável.</li>
+                        <li><i class="fas fa-check"></i> <strong>Educação:</strong> Ensinar como o sistema funciona, não apenas entregar uma caixa preta.</li>
+                        <li><i class="fas fa-check"></i> <strong>Privacidade:</strong> Zero coleta de dados. O computador é seu.</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="code-preview-card">
+                        <div class="card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="card-body">
+                            <code>
+                                <span class="cmd">root@zyo:~#</span> apt install zyo-desktop<br>
+                                <span class="output">Lendo listas de pacotes... Pronto</span><br>
+                                <span class="output">Construindo árvore de dependências... Pronto</span><br>
+                                <span class="output">Instalando segurança e privacidade...</span><br>
+                                <span class="success">Concluído! Seu sistema está seguro.</span>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-container">
+            <div class="section-header-center">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>Preciso saber programar?</summary>
+                    <p>Não! O guia é passo-a-passo. Apenas familiaridade básica com terminal ajuda, mas explicamos cada comando.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Funciona em computadores antigos?</summary>
+                    <p>Sim! A versão com XFCE é extremamente leve e roda bem em máquinas com 2GB de RAM ou menos.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>É seguro para operações bancárias?</summary>
+                    <p>Sim. Baseado no Debian Stable, o ZYO-OS herda toda a segurança de nível empresarial do Debian, somado a configurações extras de DNS e Firewall.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Pronto para assumir o controle?</h2>
+            <p>Você pode baixar a imagem ISO pronta para uso ou aprender a construir seu próprio sistema operacional passo a passo.</p>
+            <div class="cta-buttons">
+                <a href="zyo-from-scratch.html" class="btn btn-white btn-lg">
+                    Começar o Tutorial
+                </a>
+                <a href="#" class="btn btn-transparent btn-lg">
+                    <i class="fab fa-github"></i> Ver no GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="landing-logo">
+                    <i class="fab fa-linux"></i>
+                    <span>ZYO-OS</span>
+                </div>
+                <p>Um projeto open-source dedicado a trazer privacidade e simplicidade para todos.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="documentation.html">Documentação</a></li>
+                    <li><a href="zyo-from-scratch.html#part1">Instalação</a></li>
+                    <li><a href="zyo-from-scratch.html#part5">GNOME</a></li>
+                    <li><a href="zyo-from-scratch.html#part6">XFCE</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Sourceforge</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZYO-OS Project. Licença MIT/GPL.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="landing-back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script Simples para Landing Page -->
+    <script>
+        // Menu Mobile
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = mobileBtn.querySelector('i');
+                if(navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Fechar menu ao clicar em um link (Melhoria de UX)
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = mobileBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+        }
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .process-step, .about-content, .faq-item').forEach((el) => {
+            el.classList.add('fade-in-element');
+            observer.observe(el);
+        });
+
+        // Back to Top Logic
+        const backToTopBtn = document.querySelector('.landing-back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
